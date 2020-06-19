@@ -2,7 +2,7 @@ process {
     Id = "deploymentprocess-Projects-1"
     OwnerId = "Projects-1"
     IsFrozen = false
-    Version = 1
+    Version = 2
     SpaceId = "Spaces-1"
     Steps {
         run_an_aws_cli_script {
@@ -39,7 +39,7 @@ process {
                         octopus.action.script.syntax {
                             Key = "Octopus.Action.Script.Syntax"
                             Value {
-                                Value = "PowerShell"
+                                Value = "Bash"
                                 IsSensitive = false
                                 HasValue = true
                             }
@@ -79,7 +79,7 @@ process {
                         octopus.action.script.scriptbody {
                             Key = "Octopus.Action.Script.ScriptBody"
                             Value {
-                                Value = ";"
+                                Value = "The AWS account aws will be used"
                                 IsSensitive = false
                                 HasValue = true
                             }
